@@ -183,7 +183,7 @@ button {
 .hero__pattern {
     position: absolute;
     inset: 0;
-    background-image: url('../브랜드 에셋/Frame 324.png');
+    background-image: url('../브랜드 에셋/격자 패턴 레퍼런스.png');
     background-size: 300px 300px;
     background-repeat: repeat;
     opacity: 0.15;
@@ -446,7 +446,7 @@ button {
 .visual-break__pattern {
     position: absolute;
     inset: 0;
-    background-image: url('../브랜드 에셋/Frame 324.png');
+    background-image: url('../브랜드 에셋/격자 패턴 레퍼런스.png');
     background-size: 300px 300px;
     background-repeat: repeat;
     opacity: 0.15;
