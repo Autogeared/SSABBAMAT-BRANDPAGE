@@ -261,10 +261,22 @@ button {
     50% { transform: rotate(45deg) translateY(8px); }
 }
 
+/* ---------- Brand Slogan ---------- */
+.slogan {
+    width: 100%;
+    background: var(--color-dark);
+    padding-top: var(--nav-height);
+}
+
+.slogan__img {
+    width: 100%;
+    display: block;
+}
+
 /* ---------- Menu Section ---------- */
 .menu {
     background: var(--color-dark);
-    padding: calc(var(--nav-height) + 40px) 0 120px;
+    padding: 60px 0 120px;
 }
 
 .menu__title {
