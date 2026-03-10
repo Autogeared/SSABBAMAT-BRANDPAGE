@@ -91,14 +91,8 @@ button {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background: transparent;
+    background: var(--color-dark);
     transition: background var(--transition-mid), box-shadow var(--transition-mid);
-}
-
-.nav.scrolled {
-    background: rgba(234, 46, 0, 0.95);
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
-    backdrop-filter: blur(8px);
 }
 
 .nav__inner {
@@ -270,7 +264,7 @@ button {
 /* ---------- Menu Section ---------- */
 .menu {
     background: var(--color-dark);
-    padding: 100px 0 120px;
+    padding: calc(var(--nav-height) + 40px) 0 120px;
 }
 
 .menu__title {
