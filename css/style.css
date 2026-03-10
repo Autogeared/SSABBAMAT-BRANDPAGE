@@ -41,6 +41,7 @@ body {
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
 }
 
 img {
@@ -180,6 +181,23 @@ button {
     height: calc(100vh - var(--nav-height));
     object-fit: cover;
     display: block;
+}
+
+/* ---------- Touch Feedback ---------- */
+@media (hover: none) and (pointer: coarse) {
+    .menu__card:active {
+        transform: scale(0.97);
+        transition: transform 0.1s ease;
+    }
+
+    .menu__tab:active {
+        opacity: 0.7;
+    }
+
+    .footer__cta:active {
+        background: var(--color-white);
+        color: var(--color-main);
+    }
 }
 
 /* ---------- Menu Section ---------- */
@@ -531,7 +549,7 @@ button {
 @media (max-width: 767px) {
     :root {
         --nav-height: 56px;
-        --container-padding: 20px;
+        --container-padding: 16px;
     }
 
     /* Nav mobile */
@@ -568,34 +586,81 @@ button {
         font-size: 1.1rem;
     }
 
-    /* Menu mobile */
-    .menu {
-        padding: 60px 0 80px;
+    /* Slogan mobile — 이미지 비율 유지 */
+    .slogan {
+        height: auto;
+        min-height: 0;
     }
 
+    .slogan__img {
+        height: auto;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+    }
+
+    /* Menu mobile */
+    .menu {
+        padding: 48px 0 80px;
+    }
+
+    .menu__title {
+        margin-bottom: 24px;
+    }
+
+    /* Tab 가로 스크롤 */
     .menu__tabs {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
         gap: 8px;
-        margin-bottom: 32px;
+        margin-bottom: 28px;
+        padding: 0 var(--container-padding);
+        scrollbar-width: none;
+    }
+
+    .menu__tabs::-webkit-scrollbar {
+        display: none;
     }
 
     .menu__tab {
         padding: 8px 16px;
         font-size: 0.8rem;
+        flex-shrink: 0;
     }
 
+    /* 모바일 2열 그리드 */
     .menu__grid {
-        grid-template-columns: 1fr;
-        gap: 16px;
-        max-width: 480px;
-        margin: 0 auto;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        max-width: none;
+        margin: 0;
+    }
+
+    .menu__card-info {
+        padding: 12px 14px;
+    }
+
+    .menu__card-category {
+        font-size: 0.65rem;
+    }
+
+    .menu__card-info h3 {
+        font-size: 0.9rem;
     }
 
     /* Footer mobile */
     .footer {
         padding: 60px 0 32px;
+        padding-bottom: calc(32px + env(safe-area-inset-bottom));
     }
 
     .footer__logo {
         width: 140px;
+    }
+
+    .footer__cta {
+        padding: 14px 36px;
+        font-size: 0.95rem;
     }
 }
