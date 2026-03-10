@@ -20,7 +20,7 @@
                 <span></span>
             </button>
             <ul class="nav__links" id="navLinks">
-                <li><a href="#brand">브랜드</a></li>
+                <li><a href="#hero">브랜드</a></li>
                 <li><a href="#menu">메뉴</a></li>
                 <li><a href="#contact">문의</a></li>
             </ul>
@@ -32,31 +32,11 @@
         <div class="hero__pattern"></div>
         <div class="hero__content">
             <img src="브랜드 에셋/logo.png" alt="SSA.BBA.MAT" class="hero__logo">
-            <p class="hero__slogan">싸고. 빠르고. 맛있게.</p>
+            <p class="hero__story">삼겹살 · 우삼겹 · 닭어깨살 기반의<br>덮밥, 파스타보울, 샐러드보울.<br><strong>싸고, 빠르고, 맛있게 — 균형 잡힌 한 끼.</strong></p>
         </div>
         <div class="hero__scroll-indicator">
             <span>SCROLL</span>
             <div class="hero__scroll-arrow"></div>
-        </div>
-    </section>
-
-    <!-- Brand Section -->
-    <section class="brand" id="brand">
-        <div class="container">
-            <div class="brand__cards">
-                <div class="brand__card brand__card--ssa fade-in">
-                    <span class="brand__card-keyword">싸</span>
-                    <h3>합리적인 가격</h3>
-                </div>
-                <div class="brand__card brand__card--bba fade-in">
-                    <span class="brand__card-keyword">빠</span>
-                    <h3>빠른 서비스</h3>
-                </div>
-                <div class="brand__card brand__card--mat fade-in">
-                    <span class="brand__card-keyword">맛</span>
-                    <h3>균형 잡힌 맛</h3>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -73,69 +53,87 @@
             <div class="menu__grid" id="menuGrid">
                 <!-- 덮밥 3종 -->
                 <div class="menu__card fade-in" data-category="rice">
-                    <img src="브랜드 에셋/삼겹살 덮밥.png" alt="삼겹살 덮밥" loading="lazy">
-                    <div class="menu__card-overlay">
-                        <span>덮밥</span>
+                    <div class="menu__card-img">
+                        <img src="브랜드 에셋/삼겹살 덮밥.png" alt="삼겹살 덮밥" loading="lazy">
+                    </div>
+                    <div class="menu__card-info">
+                        <span class="menu__card-category">덮밥</span>
                         <h3>삼겹살 덮밥</h3>
                     </div>
                 </div>
                 <div class="menu__card fade-in" data-category="rice">
-                    <img src="브랜드 에셋/우삼겹 덮밥.png" alt="우삼겹 덮밥" loading="lazy">
-                    <div class="menu__card-overlay">
-                        <span>덮밥</span>
+                    <div class="menu__card-img">
+                        <img src="브랜드 에셋/우삼겹 덮밥.png" alt="우삼겹 덮밥" loading="lazy">
+                    </div>
+                    <div class="menu__card-info">
+                        <span class="menu__card-category">덮밥</span>
                         <h3>우삼겹 덮밥</h3>
                     </div>
                 </div>
                 <div class="menu__card fade-in" data-category="rice">
-                    <img src="브랜드 에셋/닭어깨살 덮밥.png" alt="닭어깨살 덮밥" loading="lazy">
-                    <div class="menu__card-overlay">
-                        <span>덮밥</span>
+                    <div class="menu__card-img">
+                        <img src="브랜드 에셋/닭어깨살 덮밥.png" alt="닭어깨살 덮밥" loading="lazy">
+                    </div>
+                    <div class="menu__card-info">
+                        <span class="menu__card-category">덮밥</span>
                         <h3>닭어깨살 덮밥</h3>
                     </div>
                 </div>
 
                 <!-- 파스타보울 3종 -->
                 <div class="menu__card fade-in" data-category="pasta">
-                    <img src="브랜드 에셋/삼겹살 파스타 보울.png" alt="삼겹살 파스타보울" loading="lazy">
-                    <div class="menu__card-overlay">
-                        <span>파스타보울</span>
+                    <div class="menu__card-img">
+                        <img src="브랜드 에셋/삼겹살 파스타 보울.png" alt="삼겹살 파스타보울" loading="lazy">
+                    </div>
+                    <div class="menu__card-info">
+                        <span class="menu__card-category">파스타보울</span>
                         <h3>삼겹살 파스타보울</h3>
                     </div>
                 </div>
                 <div class="menu__card fade-in" data-category="pasta">
-                    <img src="브랜드 에셋/우삼겹 파스타 보울.png" alt="우삼겹 파스타보울" loading="lazy">
-                    <div class="menu__card-overlay">
-                        <span>파스타보울</span>
+                    <div class="menu__card-img">
+                        <img src="브랜드 에셋/우삼겹 파스타 보울.png" alt="우삼겹 파스타보울" loading="lazy">
+                    </div>
+                    <div class="menu__card-info">
+                        <span class="menu__card-category">파스타보울</span>
                         <h3>우삼겹 파스타보울</h3>
                     </div>
                 </div>
                 <div class="menu__card fade-in" data-category="pasta">
-                    <img src="브랜드 에셋/닭어깨살 파스타 보울.png" alt="닭어깨살 파스타보울" loading="lazy">
-                    <div class="menu__card-overlay">
-                        <span>파스타보울</span>
+                    <div class="menu__card-img">
+                        <img src="브랜드 에셋/닭어깨살 파스타 보울.png" alt="닭어깨살 파스타보울" loading="lazy">
+                    </div>
+                    <div class="menu__card-info">
+                        <span class="menu__card-category">파스타보울</span>
                         <h3>닭어깨살 파스타보울</h3>
                     </div>
                 </div>
 
                 <!-- 샐러드보울 3종 -->
                 <div class="menu__card fade-in" data-category="salad">
-                    <img src="브랜드 에셋/삼겹살 샐러드 보울.png" alt="삼겹살 샐러드보울" loading="lazy">
-                    <div class="menu__card-overlay">
-                        <span>샐러드보울</span>
+                    <div class="menu__card-img">
+                        <img src="브랜드 에셋/삼겹살 샐러드 보울.png" alt="삼겹살 샐러드보울" loading="lazy">
+                    </div>
+                    <div class="menu__card-info">
+                        <span class="menu__card-category">샐러드보울</span>
                         <h3>삼겹살 샐러드보울</h3>
                     </div>
                 </div>
                 <div class="menu__card fade-in" data-category="salad">
-                    <img src="브랜드 에셋/우삼겹 샐러드 보울.png" alt="우삼겹 샐러드보울" loading="lazy">
-                    <div class="menu__card-overlay">
-                        <span>샐러드보울</span>
+                    <div class="menu__card-img">
+                        <img src="브랜드 에셋/우삼겹 샐러드 보울.png" alt="우삼겹 샐러드보울" loading="lazy">
+                    </div>
+                    <div class="menu__card-info">
+                        <span class="menu__card-category">샐러드보울</span>
                         <h3>우삼겹 샐러드보울</h3>
                     </div>
                 </div>
                 <div class="menu__card fade-in" data-category="salad">
-                    <img src="브랜드 에셋/닭어깨살 샐러드 보울.png" alt="닭어깨살 샐러드보울" loading="lazy">
-                    <div class="menu__card-overlay">
-                        <span>샐러드보울</span>
+                    <div class="menu__card-img">
+                        <img src="브랜드 에셋/닭어깨살 샐러드 보울.png" alt="닭어깨살 샐러드보울" loading="lazy">
+                    </div>
+                    <div class="menu__card-info">
+                        <span class="menu__card-category">샐러드보울</span>
                         <h3>닭어깨살 샐러드보울</h3>
                     </div>
                 </div>

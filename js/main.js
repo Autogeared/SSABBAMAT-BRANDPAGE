@@ -11,7 +11,6 @@
     var heroPattern = document.querySelector('.hero__pattern');
     var menuTabs = document.querySelectorAll('.menu__tab');
     var menuCards = document.querySelectorAll('.menu__card');
-    var menuGrid = document.getElementById('menuGrid');
     var fadeEls = document.querySelectorAll('.fade-in');
 
     /* ---------- Navigation: Scroll Background ---------- */
@@ -73,27 +72,16 @@
 
             var category = tab.getAttribute('data-category');
 
-            if (category === 'all') {
-                menuGrid.classList.remove('filtered');
-                menuCards.forEach(function (card) {
+            menuCards.forEach(function (card) {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
                     card.classList.remove('hidden');
                     if (!card.classList.contains('visible')) {
                         card.classList.add('visible');
                     }
-                });
-            } else {
-                menuGrid.classList.add('filtered');
-                menuCards.forEach(function (card) {
-                    if (card.getAttribute('data-category') === category) {
-                        card.classList.remove('hidden');
-                        if (!card.classList.contains('visible')) {
-                            card.classList.add('visible');
-                        }
-                    } else {
-                        card.classList.add('hidden');
-                    }
-                });
-            }
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
         });
     });
 
