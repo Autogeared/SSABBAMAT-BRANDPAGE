@@ -202,20 +202,38 @@ button {
 }
 
 .hero__story {
-    font-size: clamp(1rem, 2.2vw, 1.35rem);
-    font-weight: 500;
-    color: rgba(255, 255, 255, 0.85);
-    line-height: 1.8;
-    letter-spacing: 0.02em;
+    color: var(--color-white);
+    max-width: 640px;
+    margin: 0 auto;
 }
 
-.hero__story strong {
-    display: block;
-    margin-top: 12px;
-    font-size: clamp(1.1rem, 2.5vw, 1.5rem);
-    font-weight: 800;
-    color: var(--color-white);
+.hero__story-line {
+    font-size: clamp(0.95rem, 2vw, 1.2rem);
+    font-weight: 500;
+    line-height: 1.7;
+    opacity: 0.85;
+    margin-bottom: 8px;
+}
+
+.hero__story-en {
+    font-size: clamp(1.3rem, 3.5vw, 2.2rem);
+    font-weight: 900;
     letter-spacing: 0.05em;
+    margin-bottom: 20px;
+}
+
+.hero__story-tagline {
+    font-size: clamp(1.1rem, 2.8vw, 1.6rem);
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    margin-bottom: 8px;
+}
+
+.hero__story-brand {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    margin-top: 4px;
 }
 
 .hero__scroll-indicator {
