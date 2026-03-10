@@ -395,17 +395,15 @@ button {
 }
 
 .visual-break__text {
-    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
     font-weight: 700;
     color: var(--color-white);
-    line-height: 1.4;
+    line-height: 1.6;
+    margin-bottom: 16px;
 }
 
-.visual-break__text strong {
-    font-weight: 900;
-    font-size: 1.2em;
-    display: block;
-    margin-top: 8px;
+.visual-break__text:last-child {
+    margin-bottom: 0;
 }
 
 /* ---------- Footer ---------- */
