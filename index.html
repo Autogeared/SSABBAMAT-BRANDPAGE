@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSA.BBA.MAT — 싸고. 빠르고. 맛있게.</title>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav__inner">
+            <a href="#hero" class="nav__logo">SSA.BBA.MAT</a>
+            <button class="nav__hamburger" id="hamburger" aria-label="메뉴 열기">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav__links" id="navLinks">
+                <li><a href="#brand">브랜드</a></li>
+                <li><a href="#menu">메뉴</a></li>
+                <li><a href="#contact">문의</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero__pattern"></div>
+        <div class="hero__content">
+            <img src="브랜드 에셋/logo.png" alt="SSA.BBA.MAT" class="hero__logo">
+            <p class="hero__slogan">싸고. 빠르고. 맛있게.</p>
+        </div>
+        <div class="hero__scroll-indicator">
+            <span>SCROLL</span>
+            <div class="hero__scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Brand Section -->
+    <section class="brand" id="brand">
+        <div class="container">
+            <div class="brand__cards">
+                <div class="brand__card brand__card--ssa fade-in">
+                    <span class="brand__card-keyword">싸</span>
+                    <h3>합리적인 가격</h3>
+                </div>
+                <div class="brand__card brand__card--bba fade-in">
+                    <span class="brand__card-keyword">빠</span>
+                    <h3>빠른 서비스</h3>
+                </div>
+                <div class="brand__card brand__card--mat fade-in">
+                    <span class="brand__card-keyword">맛</span>
+                    <h3>균형 잡힌 맛</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <h2 class="menu__title fade-in">MENU</h2>
+            <div class="menu__tabs fade-in">
+                <button class="menu__tab active" data-category="all">전체</button>
+                <button class="menu__tab" data-category="rice">덮밥</button>
+                <button class="menu__tab" data-category="pasta">파스타보울</button>
+                <button class="menu__tab" data-category="salad">샐러드보울</button>
+            </div>
+            <div class="menu__grid" id="menuGrid">
+                <!-- 덮밥 3종 -->
+                <div class="menu__card fade-in" data-category="rice">
+                    <img src="브랜드 에셋/삼겹살 덮밥.png" alt="삼겹살 덮밥" loading="lazy">
+                    <div class="menu__card-overlay">
+                        <span>덮밥</span>
+                        <h3>삼겹살 덮밥</h3>
+                    </div>
+                </div>
+                <div class="menu__card fade-in" data-category="rice">
+                    <img src="브랜드 에셋/우삼겹 덮밥.png" alt="우삼겹 덮밥" loading="lazy">
+                    <div class="menu__card-overlay">
+                        <span>덮밥</span>
+                        <h3>우삼겹 덮밥</h3>
+                    </div>
+                </div>
+                <div class="menu__card fade-in" data-category="rice">
+                    <img src="브랜드 에셋/닭어깨살 덮밥.png" alt="닭어깨살 덮밥" loading="lazy">
+                    <div class="menu__card-overlay">
+                        <span>덮밥</span>
+                        <h3>닭어깨살 덮밥</h3>
+                    </div>
+                </div>
+
+                <!-- 파스타보울 3종 -->
+                <div class="menu__card fade-in" data-category="pasta">
+                    <img src="브랜드 에셋/삼겹살 파스타 보울.png" alt="삼겹살 파스타보울" loading="lazy">
+                    <div class="menu__card-overlay">
+                        <span>파스타보울</span>
+                        <h3>삼겹살 파스타보울</h3>
+                    </div>
+                </div>
+                <div class="menu__card fade-in" data-category="pasta">
+                    <img src="브랜드 에셋/우삼겹 파스타 보울.png" alt="우삼겹 파스타보울" loading="lazy">
+                    <div class="menu__card-overlay">
+                        <span>파스타보울</span>
+                        <h3>우삼겹 파스타보울</h3>
+                    </div>
+                </div>
+                <div class="menu__card fade-in" data-category="pasta">
+                    <img src="브랜드 에셋/닭어깨살 파스타 보울.png" alt="닭어깨살 파스타보울" loading="lazy">
+                    <div class="menu__card-overlay">
+                        <span>파스타보울</span>
+                        <h3>닭어깨살 파스타보울</h3>
+                    </div>
+                </div>
+
+                <!-- 샐러드보울 3종 -->
+                <div class="menu__card fade-in" data-category="salad">
+                    <img src="브랜드 에셋/삼겹살 샐러드 보울.png" alt="삼겹살 샐러드보울" loading="lazy">
+                    <div class="menu__card-overlay">
+                        <span>샐러드보울</span>
+                        <h3>삼겹살 샐러드보울</h3>
+                    </div>
+                </div>
+                <div class="menu__card fade-in" data-category="salad">
+                    <img src="브랜드 에셋/우삼겹 샐러드 보울.png" alt="우삼겹 샐러드보울" loading="lazy">
+                    <div class="menu__card-overlay">
+                        <span>샐러드보울</span>
+                        <h3>우삼겹 샐러드보울</h3>
+                    </div>
+                </div>
+                <div class="menu__card fade-in" data-category="salad">
+                    <img src="브랜드 에셋/닭어깨살 샐러드 보울.png" alt="닭어깨살 샐러드보울" loading="lazy">
+                    <div class="menu__card-overlay">
+                        <span>샐러드보울</span>
+                        <h3>닭어깨살 샐러드보울</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Visual Break -->
+    <section class="visual-break">
+        <div class="visual-break__pattern"></div>
+        <div class="visual-break__content fade-in">
+            <p class="visual-break__text">균형 잡힌 한 끼,<br><strong>SSA.BBA.MAT</strong></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <img src="브랜드 에셋/logo.png" alt="SSA.BBA.MAT" class="footer__logo">
+            <p class="footer__desc">싸고. 빠르고. 맛있게.<br>균형 잡힌 한 끼 식사, 싸빠맛</p>
+            <a href="mailto:contact@ssabbamat.com" class="footer__cta">가맹 · 제휴 문의</a>
+            <div class="footer__info">
+                <p>&copy; 2025 SSA.BBA.MAT. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
