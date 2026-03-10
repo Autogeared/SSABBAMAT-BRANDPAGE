@@ -32,7 +32,6 @@
 
 html {
     font-size: 16px;
-    scroll-snap-type: y mandatory;
 }
 
 body {
@@ -533,10 +532,6 @@ button {
     :root {
         --nav-height: 56px;
         --container-padding: 20px;
-    }
-
-    html {
-        scroll-snap-type: y proximity;
     }
 
     /* Nav mobile */
